@@ -1,5 +1,6 @@
 import pyaudio
 import wave
+import audioop
 
 FORMAT = pyaudio.paInt16
 CHANNELS = 1
@@ -47,8 +48,9 @@ print("recording started")
 Recordframes = []
 
 for i in range(0, int(RATE / CHUNK * RECORD_SECONDS)):
-    data = stream.read(CHUNK)
-    Recordframes.append(data)
+    sound_byte = stream.read(CHUNK)
+    Recordframes.append(sound_byte)
+    audioop.rms(sound_byte, 2)
 print("recording stopped")
 
 stream.stop_stream()
