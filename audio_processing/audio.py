@@ -14,6 +14,7 @@ print("----------------------record device list---------------------")
 info = audio.get_host_api_info_by_index(0)
 numdevices = info.get("deviceCount")
 
+
 for ii in range(audio.get_device_count()):
     print(audio.get_device_info_by_index(ii).get("name"))
 # for i in range(0, numdevices):
