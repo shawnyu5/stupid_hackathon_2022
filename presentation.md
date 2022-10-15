@@ -1,6 +1,6 @@
 # Yappo or ZAPPO
 
-Brought to you by Harsim, Shawn, Issac, Eric, Ivan
+Brought to you by Harsim, Shawn, Issac, Erik, Ivan
 
 ---
 
