@@ -4,4 +4,4 @@
 
 -  [ ] Clip on mic (Shawn)
 -  [ ] Shock collar
--  [ ] Raspberry pi
+-  [ ] Raspberry pi (Eric)
