@@ -5,3 +5,9 @@
 -  [ ] Clip on mic (Shawn)
 -  [ ] Shock collar
 -  [ ] Raspberry pi (Eric)
+
+## Things to do
+
+-  [ ] Hardware - pushing remote controller button
+-  [ ] communicating the remote controller via the PI
+-  [ ] Monitor audio input via pyaudio
