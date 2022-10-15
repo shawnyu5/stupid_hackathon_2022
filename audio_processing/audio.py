@@ -1,6 +1,7 @@
 import pyaudio
 import wave
 import audioop
+import json
 
 FORMAT = pyaudio.paInt16
 CHANNELS = 1
@@ -47,10 +48,14 @@ stream = audio.open(
 print("recording started")
 Recordframes = []
 
+f = open("config.json")
+config = json.load(f)
+
 for i in range(0, int(RATE / CHUNK * RECORD_SECONDS)):
     sound_byte = stream.read(CHUNK)
     Recordframes.append(sound_byte)
-    audioop.rms(sound_byte, 2)
+    if config["max_sound"] > audioop.rms(sound_byte, 2):
+        print("sound detected")
 print("recording stopped")
 
 stream.stop_stream()
