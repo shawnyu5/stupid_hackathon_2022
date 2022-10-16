@@ -35,7 +35,7 @@ Brought to you by Harsim, Shawn, Issac, Erik, Ivan
 
 # Photos and videos
 
-<img src="img/presentation.jpg" width=400px>
+<img src="https://i.imgur.com/e0vsOYA.jpg" width=400px>
 
 <small>Added after the hackathon</small>
 
